@@ -1,0 +1,57 @@
+.cBod {
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    justify-content: center;
+    margin-top: 50px;
+    height: 700px ;
+    width: 500px;
+    background-color: #1B2C6C;
+    border: 2px black;
+    border-style: double;
+    box-shadow: 5px 10px #888888;
+
+}
+
+.num{
+    justify-content: center;
+    align-content: center;
+    background-color: white;
+    border: 2px black;
+    border-style: solid;
+    height:80px;
+    width: 120px;
+}
+
+.op{
+    color: white;
+    justify-content: center;
+    align-content: center;
+    background-color: #AC1517;
+    border: 2px black;
+    border-style: solid;
+    height:80px;
+    width: 120px;
+
+}
+.equals{
+    color: white;
+    justify-content: center;
+    align-content: center;
+    background-color: #AC1517;
+    border: 2px black;
+    border-style: solid;
+    height:120px;
+    width: 120px;
+
+}
+
+.screenco{
+    background-color: #A4BCB7;
+    height: 50px;
+    width: 140px ;
+
+}
+
+hr{
+    background-color: black;
+}
