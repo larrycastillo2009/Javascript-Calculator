@@ -17,3 +17,15 @@ function clearStr() {
     document.getElementById("fNum").value = '';
     document.getElementById("sNum").value = '';
 }
+
+function solution() {
+    var firstNum = document.getElementById("fNum").value;
+    var secondNum = document.getElementById("sNum").value;
+    var operator = document.getElementById("operator").value;
+
+    var answer = eval(firstNum + operator + secondNum);
+
+    clearStr();
+    dis(answer);
+
+}
