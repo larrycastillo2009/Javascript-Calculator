@@ -8,14 +8,34 @@ function dis(val) {
         if (val == "."){
             document.getElementById("sNum").value += val;
             dot.disabled =true;
-        }else {
+        }else if(val == "(-)") {
+            val = "-";
+            var newStr = document.getElementById("fNum").value;
+            if (newStr.charAt(0) == "-") {
+                newStr = newStr.substring(1);
+                document.getElementById("fNum").value = newStr;
+            } else {
+                document.getElementById("fNum").value = val + newStr;
+            }
+        }
+        else {
             document.getElementById("sNum").value += val;
         }
     }else {
         if (val == "."){
             document.getElementById("fNum").value += val;
             dot.disabled =true;
-        }else {
+        }else if(val == "(-)") {
+            val = "-";
+            var newStr = document.getElementById("fNum").value;
+            if(newStr.charAt(0) == "-"){
+                newStr = newStr.substring(1);
+                document.getElementById("fNum").value = newStr;
+            }else{
+            document.getElementById("fNum").value = val + newStr;
+            }
+        }
+        else {
             document.getElementById("fNum").value += val;
         }
     }
@@ -42,3 +62,4 @@ function solution() {
     dis(answer);
 
 }
+
