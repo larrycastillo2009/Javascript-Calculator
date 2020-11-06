@@ -13,9 +13,9 @@ function dis(val) {
             var newStr = document.getElementById("fNum").value;
             if (newStr.charAt(0) == "-") {
                 newStr = newStr.substring(1);
-                document.getElementById("fNum").value = newStr;
-            } else {
-                document.getElementById("fNum").value = val + newStr;
+                document.getElementById("sNum").value = newStr;
+            }else {
+                document.getElementById("sNum").value = val + newStr;
             }
         }
         else {
@@ -55,8 +55,12 @@ function solution() {
     var firstNum = document.getElementById("fNum").value;
     var secondNum = document.getElementById("sNum").value;
     var operator = document.getElementById("operator").value;
-
-    var answer = eval(firstNum + operator + secondNum);
+    if(sNum.charAt(0) == "-" && operator.charAt(0) == "-"){
+        operator = "+";
+        var answer = eval(firstNum + operator + secondNum.substring(1));
+    }else{
+        var answer = eval(firstNum + operator + secondNum);
+    }
 
     clearStr();
     dis(answer);
