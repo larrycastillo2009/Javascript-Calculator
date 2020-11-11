@@ -57,7 +57,8 @@ function solution() {
     var operator = document.getElementById("operator").value;
     if(sNum.charAt(0) == "-" && operator.charAt(0) == "-"){
         operator = "+";
-        var answer = eval(firstNum + operator + secondNum.substring(1));
+        var newStr = secondNum.substring(1)
+        var answer = eval(firstNum + operator + newStr);
     }else{
         var answer = eval(firstNum + operator + secondNum);
     }
