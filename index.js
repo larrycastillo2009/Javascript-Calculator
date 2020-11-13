@@ -68,3 +68,10 @@ function solution() {
 
 }
 
+function sqroot() {
+    var firstNum = document.getElementById("fNum").value;
+    var answer = Math.sqrt(firstNum);
+    clearStr();
+    dis(answer);
+}
+
