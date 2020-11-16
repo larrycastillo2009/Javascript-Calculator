@@ -1,6 +1,6 @@
 "use strict";
 
-var numMemory = 0;
+var numMemory = "";
 
 function dis(val) {
     const dot = document.getElementById("thedot")
@@ -81,6 +81,26 @@ function sqroot() {
 }
 
 function MRC() {
-    numMemory = document.getElementById("fnum").value
+    document.getElementById("fNum").value = numMemory;
 }
+
+function negM() {
+    if(numMemory == "") {
+        numMemory =  "-" + document.getElementById("fNum").value;
+    }else{
+        var newNum = eval(numMemory + "-" + disNum);
+        numMemory = newNum ;
+    }
+}
+
+function plusM() {
+    var disNum = document.getElementById("fNum").value;
+    if (numMemory == "") {
+        numMemory += document.getElementById("fNum").value;
+    }else{
+        var newNum = eval(numMemory + "+" + disNum);
+        numMemory = newNum ;
+    }
+}
+
 
