@@ -81,25 +81,51 @@ function sqroot() {
 }
 
 function MRC() {
+    if(document.getElementById("operator").value != ""){
+        document.getElementById("sNum").value = numMemory;
+    }else{
     document.getElementById("fNum").value = numMemory;
+    }
 }
 
 function negM() {
-    if(numMemory == "") {
-        numMemory =  "-" + document.getElementById("fNum").value;
-    }else{
-        var newNum = eval(numMemory + "-" + disNum);
-        numMemory = newNum ;
+    if (document.getElementById("operator").value != "") {
+        var disNum = document.getElementById("sNum").value;
+        if (numMemory == "") {
+            numMemory = "-" + document.getElementById("sNum").value;
+        } else {
+            var newNum = eval(numMemory + "-" + disNum);
+            numMemory = newNum;
+        }
+    } else {
+        var disNum = document.getElementById("fNum").value;
+        if (numMemory == "") {
+            numMemory = "-" + document.getElementById("fNum").value;
+        } else {
+            var newNum = eval(numMemory + "-" + disNum);
+            numMemory = newNum;
+        }
     }
 }
 
 function plusM() {
-    var disNum = document.getElementById("fNum").value;
-    if (numMemory == "") {
-        numMemory += document.getElementById("fNum").value;
-    }else{
-        var newNum = eval(numMemory + "+" + disNum);
-        numMemory = newNum ;
+    if (document.getElementById("operator").value != "") {
+        var disNum = document.getElementById("sNum").value;
+
+        if (numMemory == "") {
+            numMemory += document.getElementById("sNum").value;
+        } else {
+            var newNum = eval(numMemory + "+" + disNum);
+            numMemory = newNum;
+        }
+    } else {
+        var disNum = document.getElementById("sNum").value;
+        if (numMemory == "") {
+            numMemory += document.getElementById("fNum").value;
+        } else {
+            var newNum = eval(numMemory + "+" + disNum);
+            numMemory = newNum;
+        }
     }
 }
 
