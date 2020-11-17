@@ -80,6 +80,16 @@ function sqroot() {
     dis(answer);
 }
 
+function numPercentage() {
+    if (document.getElementById("operator").value != ""){
+        var dNum = document.getElementById("sNum").value
+        document.getElementById("sNum").value = eval(dNum + "/" + "100");
+    }else{
+        var dNum = document.getElementById("fNum").value
+        document.getElementById("fNum").value = eval(dNum + "/" + "100");
+    }
+}
+
 function MRC() {
     if(document.getElementById("operator").value != ""){
         document.getElementById("sNum").value = numMemory;
