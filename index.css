@@ -68,3 +68,26 @@ a {
     padding: 0;
 }
 body { margin: 0; }
+
+.opEqT{
+    color: white;
+    justify-content: center;
+    align-content: center;
+    background-color: #AC1517;
+    border: 2px black;
+    border-bottom: #AC1517;
+    border-style: solid;
+    height:80px;
+    width: 120px;
+}
+.opEqB{
+    color: white;
+    justify-content: center;
+    align-content: center;
+    background-color: #AC1517;
+    border: 2px black;
+    border-top: #AC1517;
+    border-style: solid;
+    height:80px;
+    width: 120px;
+}
