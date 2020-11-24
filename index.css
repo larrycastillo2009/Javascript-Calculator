@@ -3,7 +3,7 @@
     border-bottom-left-radius: 25px;
     justify-content: center;
     margin-top: 50px;
-    height: 700px ;
+    height: 750px ;
     width: 500px;
     background-color: #1B2C6C;
     border: 2px black;
@@ -20,6 +20,7 @@
     border-style: solid;
     height:80px;
     width: 120px;
+
 }
 
 .op{
@@ -44,6 +45,7 @@
     height:160px;
     width: 120px;
 
+
 }
 
 .screenco{
@@ -63,31 +65,12 @@ a {
     text-decoration: none !important;
 }
 
-.buttons{
-    margin: 0;
-    padding: 0;
-}
 body { margin: 0; }
 
-.opEqT{
-    color: white;
-    justify-content: center;
-    align-content: center;
-    background-color: #AC1517;
-    border: 2px black;
-    border-bottom: #AC1517;
+.solarPan{
+    background-color: darkslategrey;
+    border: 6px black;
     border-style: solid;
-    height:80px;
-    width: 120px;
-}
-.opEqB{
-    color: white;
-    justify-content: center;
-    align-content: center;
-    background-color: #AC1517;
-    border: 2px black;
-    border-top: #AC1517;
-    border-style: solid;
-    height:80px;
-    width: 120px;
+    width: 60px;
+    height: 40px;
 }
