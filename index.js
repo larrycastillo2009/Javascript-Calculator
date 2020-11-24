@@ -139,4 +139,29 @@ function plusM() {
     }
 }
 
+function compressedString(message) {
+    var newStr = "";
+    var counter = 0;
+    for(var i = 0; i < message.length; i++){
+        var newChar = message.charAt(i);
+        console.log(newChar)
+        var newerChar = message.charAt(i+1)
+        console.log(newerChar)
+       if(newChar === newerChar){
+           counter++;
+       }else {
+           counter++;
+           console.log(counter)
+           newStr = newStr + newChar;
+           if (counter > 1) {
+               newStr = newStr + counter;
+           }
+           counter = 0;
+       }
+
+    }
+    return newStr;
+}
+console.log(compressedString("aabb"));
+
 
