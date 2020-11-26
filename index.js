@@ -164,4 +164,15 @@ function compressedString(message) {
 }
 console.log(compressedString("aabb"));
 
+$(document).ready(function () {
+    var expanded = false;
+    $("#drawer-handle").click(function () {
+        if (expanded = !expanded) {
+            $("#drawer-content").animate({ "margin-right": 0 },    "slow");
+        } else {
+            $("#drawer-content").animate({ "margin-right": -200 }, "slow");
+        }
+    });
+});
+
 
