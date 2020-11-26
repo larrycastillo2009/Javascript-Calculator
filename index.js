@@ -170,7 +170,7 @@ $(document).ready(function () {
         if (expanded = !expanded) {
             $("#drawer-content").animate({ "margin-right": 0 },    "slow");
         } else {
-            $("#drawer-content").animate({ "margin-right": -200 }, "slow");
+            $("#drawer-content").animate({ "margin-right": -300 }, "slow");
         }
     });
 });
